@@ -12,7 +12,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@capacitor-community/sqlite": "5.4.1",
     "@capacitor/android": "5.5.1",
     "@capacitor/app": "5.0.6",
     "@capacitor/core": "5.5.1",
@@ -31,6 +30,7 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
+    "@capacitor-community/sqlite": "^5.4.2-2",
     "@capacitor/cli": "5.5.1",
     "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -43,7 +43,9 @@
     "cypress": "^12.7.0",
     "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
+    "jeep-sqlite": "^2.5.4",
     "jsdom": "^22.1.0",
+    "react-sqlite-hook": "^3.2.1",
     "terser": "^5.4.0",
     "typescript": "^5.1.6",
     "vite": "^4.3.9",
