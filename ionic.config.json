@@ -1,0 +1,7 @@
+{
+  "name": "cgc-sas-sqlite-test-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
