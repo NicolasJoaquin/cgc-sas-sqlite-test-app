@@ -38,48 +38,48 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-interface JsonListenerInterface {
-  jsonListeners: boolean,
-  setJsonListeners: React.Dispatch<React.SetStateAction<boolean>>,
-}
-interface existingConnInterface {
-  existConn: boolean,
-  setExistConn: React.Dispatch<React.SetStateAction<boolean>>,
-}
+// interface JsonListenerInterface {
+//   jsonListeners: boolean,
+//   setJsonListeners: React.Dispatch<React.SetStateAction<boolean>>,
+// }
+// interface existingConnInterface {
+//   existConn: boolean,
+//   setExistConn: React.Dispatch<React.SetStateAction<boolean>>,
+// }
 
 // Singleton SQLite Hook
-export let sqlite: any;
+// export let sqlite: any;
 // Existing Connections Store
-export let existingConn: any;
+// export let existingConn: any;
 // Is Json Listeners used
-export let isJsonListeners: JsonListenerInterface;
+// export let isJsonListeners: JsonListenerInterface;
 
 setupIonicReact();
 
 const App: React.FC = () => {
   /* Inicialización del Singleton de SQLite para luego ser utilizado en otros componentes */
-  const [existConn, setExistConn] = useState(false);
-  existingConn = {existConn: existConn, setExistConn: setExistConn};
-  
-  sqlite = useSQLite();
-  console.log(`$$$ in App sqlite.isAvailable  ${sqlite.isAvailable} $$$`);
+  // const [existConn, setExistConn] = useState(false);
+  // existingConn = {existConn: existConn, setExistConn: setExistConn};
 
-  const {echo, getPlatform, createConnection, closeConnection,
-    retrieveConnection, retrieveAllConnections, closeAllConnections,
-    addUpgradeStatement, importFromJson, isJsonValid, copyFromAssets,
-    isAvailable, saveToStore} = useSQLite();
+  // sqlite = useSQLite();
+  // console.log(`$$$ in App sqlite.isAvailable  ${sqlite.isAvailable} $$$`);
 
-  sqlite = {echo: echo, getPlatform: getPlatform,
-    createConnection: createConnection,
-    closeConnection: closeConnection,
-    retrieveConnection: retrieveConnection,
-    retrieveAllConnections: retrieveAllConnections,
-    closeAllConnections: closeAllConnections,
-    addUpgradeStatement: addUpgradeStatement,
-    importFromJson: importFromJson,
-    isJsonValid: isJsonValid,
-    copyFromAssets: copyFromAssets,
-    isAvailable:isAvailable, saveToStore: saveToStore};
+  // const {echo, getPlatform, createConnection, closeConnection,
+  //   retrieveConnection, retrieveAllConnections, closeAllConnections,
+  //   addUpgradeStatement, importFromJson, isJsonValid, copyFromAssets,
+  //   isAvailable, saveToStore} = useSQLite();
+
+  // sqlite = {echo: echo, getPlatform: getPlatform,
+  //   createConnection: createConnection,
+  //   closeConnection: closeConnection,
+  //   retrieveConnection: retrieveConnection,
+  //   retrieveAllConnections: retrieveAllConnections,
+  //   closeAllConnections: closeAllConnections,
+  //   addUpgradeStatement: addUpgradeStatement,
+  //   importFromJson: importFromJson,
+  //   isJsonValid: isJsonValid,
+  //   copyFromAssets: copyFromAssets,
+  //   isAvailable:isAvailable, saveToStore: saveToStore};
 
   return (
     <IonApp>
@@ -106,7 +106,7 @@ const App: React.FC = () => {
             </IonTabButton>
             <IonTabButton tab="tab2" href="/tab2">
               <IonIcon aria-hidden="true" icon={ellipse} />
-              <IonLabel>Tab 2</IonLabel>
+              <IonLabel>Paso 1</IonLabel>
             </IonTabButton>
             <IonTabButton tab="tab3" href="/tab3">
               <IonIcon aria-hidden="true" icon={square} />

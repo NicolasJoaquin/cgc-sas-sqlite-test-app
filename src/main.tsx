@@ -8,7 +8,11 @@ import { defineCustomElements as jeepSqlite, applyPolyfills, JSX as LocalJSX  } 
 import { HTMLAttributes } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { CapacitorSQLite, SQLiteConnection, SQLiteDBConnection } from '@capacitor-community/sqlite';
-import { JeepSqlite } from "jeep-sqlite/dist/components/jeep-sqlite";
+// import { JeepSqlite } from "jeep-sqlite/dist/components/jeep-sqlite";
+
+// import { createTables } from './utils/sqlite/createTables';
+// import { createUsersTable } from './utils/sqlite/createUsersTable';
+// import { insertUsers } from './utils/sqlite/insertUsersTest';
 
 type StencilToReact<T> = {
   [P in keyof T]?: T[P] & Omit<HTMLAttributes<Element>, 'className'> & {
@@ -50,17 +54,22 @@ window.addEventListener('DOMContentLoaded', async () => {
       db = await sqlite.createConnection("db_issue9", false, "no-encryption", 1, false);
     }
 
-    // await db.open();
-    // let query = `
-    // CREATE TABLE IF NOT EXISTS test (
-    //   id INTEGER PRIMARY KEY NOT NULL,
-    //   name TEXT NOT NULL
-    // );
-    // `
-    // const res: any = await db.execute(query);
-    // console.log(`res: ${JSON.stringify(res)}`);
-    // await db.close();
-    // await sqlite.closeConnection("db_issue9", false);
+    await db.open();
+    /* Queries de ejemplo */
+    // let res: any = await db.execute(createUsersTable);
+    // console.log(`res create: ${JSON.stringify(res)}`);
+
+    // res = await db.execute(insertUsers);
+    // console.log(`res users: ${JSON.stringify(res)}`);
+
+    // let resUsers: any = await db.query("SELECT * FROM users;");
+    // console.log("res select", resUsers);
+
+    // res = await db.execute("DELETE FROM users");
+    // console.log(`res users delete: ${JSON.stringify(res)}`);
+
+    await db.close();
+    await sqlite.closeConnection("db_issue9", false);
     
     const container = document.getElementById('root');
     const root = createRoot(container!);
@@ -69,16 +78,6 @@ window.addEventListener('DOMContentLoaded', async () => {
         <App />
       </React.StrictMode>
     );
-    
-    // If you want your app to work offline and load faster, you can change
-    // unregister() to register() below. Note this comes with some pitfalls.
-    // Learn more about service workers: https://cra.link/PWA
-    // serviceWorkerRegistration.unregister();
-    
-    // If you want to start measuring performance in your app, pass a function
-    // to log results (for example: reportWebVitals(console.log))
-    // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-    // reportWebVitals();
   } catch (err) {
     console.log(`Error: ${err}`);
     throw new Error(`Error: ${err}`)

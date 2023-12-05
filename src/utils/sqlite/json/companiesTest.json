@@ -1,0 +1,52 @@
+[
+    {
+        "company_id": 100000,
+        "name": "CGC",
+        "changed": false
+    },
+    {
+        "company_id": 200,
+        "name": "A-EVANGELISTA S.A",
+        "changed": false
+    },
+    {
+        "company_id": 9831,
+        "name": "GAS AUSTRAL SA",
+        "changed": false
+    },
+    {
+        "company_id": 729,
+        "name": "GEO SERVICE SA",
+        "changed": false
+    },
+    {
+        "company_id": 1734,
+        "name": "WEATHERFORD INTERNATIONAL DE ARGENTINA S.A.",
+        "changed": false
+    },
+    {
+        "company_id": 1750,
+        "name": "ZALAZAR LUIS FERNANDO",
+        "changed": false
+    },
+    {
+        "company_id": 1569,
+        "name": "TECNOLOGIA EN CONSTRUCCIONES S.A.",
+        "changed": false
+    },
+    {
+        "company_id": 1477,
+        "name": "SIDERCA S.A.I.C.",
+        "changed": false
+    },
+    {
+        "company_id": 5874,
+        "name": "RECO SA",
+        "changed": false
+    },
+    {
+        "company_id": 831,
+        "name": "HUINCAN S.R.L.",
+        "changed": false
+    }
+]

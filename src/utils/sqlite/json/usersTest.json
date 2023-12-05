@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Nicolas",
+        "last_name": "Diorio",
+        "email": "nicolas.diorio@naiades.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Analista SAS Buenos Aires",
+        "changed": false
+    },
+    {
+        "id": 2,
+        "name": "Sebastian",
+        "last_name": "Diaz",
+        "email": "sebastian_diaz@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Analista SAS Buenos Aires",
+        "changed": false
+    },
+    {
+        "id": 3,
+        "name": "Mariano",
+        "last_name": "Sosa",
+        "email": "mariano_sosa@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Líder SAS Buenos Aires",
+        "changed": false
+    },
+    {
+        "id": 4,
+        "name": "Mathias",
+        "last_name": "Bruno",
+        "email": "mathias_bruno@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Líder SAS Buenos Aires",
+        "changed": false
+    },
+    {
+        "id": 5,
+        "name": "Javier",
+        "last_name": "Borquez",
+        "email": "javier_borquez@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Gerente SAS GSJ",
+        "changed": false
+    },
+    {
+        "id": 6,
+        "name": "Laureano",
+        "last_name": "Salvo",
+        "email": "laureano_salvo@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Gerente SAS Austral",
+        "changed": false
+    },
+    {
+        "id": 7,
+        "name": "Rolando",
+        "last_name": "Chaves",
+        "email": "rolando_chaves@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Coordinador SAS Mendoza",
+        "changed": false
+    },
+    {
+        "id": 8,
+        "name": "Pablo",
+        "last_name": "Barone",
+        "email": "pablo_barone@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Director SAS Buenos Aires",
+        "changed": false
+    },
+    {
+        "id": 9,
+        "name": "Horacio",
+        "last_name": "Olivera",
+        "email": "horacio_olivera@cgc.com.ar",
+        "permissions": "sas,sas_edit_inspec,sasagg",
+        "org_chart_position": "Supervisor SAS GSJ",
+        "changed": false
+    }
+]
